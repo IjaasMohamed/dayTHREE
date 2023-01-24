@@ -1,2 +1,3 @@
 ONE LINE
+As well as git diff
 ADDED ON NEW BRANCH

@@ -185,10 +185,20 @@
 // console.log(Ci);
 // console.log("First =>" + first + " Rest=>" + rest);
 
-const u1 = {
-  name12: "Ryan",
-  emailly: "Rya@gmail.com",
-  password1: "JilJilJilBuk",
+// const u1 = {
+//   name12: "Ryan",
+//   emailly: "Rya@gmail.com",
+//   password1: "JilJilJilBuk",
+// };
+// let { password1, ...rest } = u1;
+// console.log(rest);
+
+function Holiday(destination, price) {
+  this.destination = destination;
+  this.price = price;
+}
+Holiday.prototype.info = function () {
+  console.log(`${this.destination}`);
+  console.log(`${this.price}`);
 };
-let { password1, ...rest } = u1;
-console.log(rest);
+const nepal = new Holiday("NaiPahara", 32);

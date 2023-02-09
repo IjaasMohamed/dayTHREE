@@ -110,16 +110,37 @@
 
 // kg("Kerala kansa");
 
-let blog = (title, author) => {
-  if (!title) {
-    throw new error("Kindly enter the title" + err);
-  }
-  if (!author) {
-    throw new error(alert("please enter the author" + err));
-  }
-  return `${title} - ${author}`;
+// let blog = (title, author) => {
+//   if (!title) {
+//     throw new error("Kindly enter the title" + err);
+//   }
+//   if (!author) {
+//     throw new error(alert("please enter the author" + err));
+//   }
+//   return `${title} - ${author}`;
+// };
+
+// console.log(blog("Harry potter", "Nigga who wrote Harry Potter"));
+
+// alert(blog("how to win friends and influence people", "Dale Carnegie"));
+
+// function sayHi() {
+//   console.log(this);
+// }
+// sayHi();
+
+let australia = {
+  cities: ["sydney", "adeleine", "melborne"],
+  dash: function () {
+    alert(this.cities.join(" - "));
+  },
 };
+australia.dash();
 
-console.log(blog("Harry potter", "Nigga who wrote Harry Potter"));
-
-alert(blog("how to win friends and influence people", "Dale Carnegie"));
+let Canada = {
+  cities: ["vancour", "calgary", "ottawa", "montreal"],
+  withDash: function () {
+    console.log(this.cities.copyWithin(1, 3));
+  },
+};
+Canada.withDash();

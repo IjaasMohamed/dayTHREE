@@ -192,13 +192,3 @@
 // };
 // let { password1, ...rest } = u1;
 // console.log(rest);
-
-function Holiday(destination, price) {
-  this.destination = destination;
-  this.price = price;
-}
-Holiday.prototype.info = function () {
-  console.log(`${this.destination}`);
-  console.log(`${this.price}`);
-};
-const nepal = new Holiday("NaiPahara", 32);

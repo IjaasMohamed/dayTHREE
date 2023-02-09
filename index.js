@@ -129,18 +129,66 @@
 // }
 // sayHi();
 
-let australia = {
-  cities: ["sydney", "adeleine", "melborne"],
-  dash: function () {
-    alert(this.cities.join(" - "));
-  },
-};
-australia.dash();
+// let australia = {
+//   cities: ["sydney", "adeleine", "melborne"],
+//   dash: function () {
+//     alert(this.cities.join(" - "));
+//   },
+// };
+// australia.dash();
 
-let Canada = {
-  cities: ["vancour", "calgary", "ottawa", "montreal"],
-  withDash: function () {
-    console.log(this.cities.copyWithin(1, 3));
-  },
+// let Canada = {
+//   cities: ["vancour", "calgary", "ottawa", "montreal"],
+//   withDash: function () {
+//     console.log(this.cities.copyWithin(1, 3));
+//   },
+// };
+// Canada.withDash();
+
+// let thingsToDo = {
+//   morning: "Exercise",
+//   afternonn: "Work",
+//   evening: "Code",
+//   night: ["Sleep", "Dream", "Repeat"],
+// };
+
+// let { morning, afternonn, evening, night } = thingsToDo;
+
+// console.log(thingsToDo.morning);
+
+// const uniStudent = ({ fname, lname }) => {
+//   console.log(`${fname} ${lname} is from the universe`);
+// };
+// uniStudent({
+//   fname: "Ijaas",
+//   lname: "Mohamed",
+// });
+
+// let phone = ({ type, price }) => {
+//   console.log(`${type} ${price} will master js in 3 more days Hopefully`);
+// };
+// phone({ type: "Mobile - iphone", price: " 101.000.00" });
+
+// let [, arr] = ["one", "two ", "three"];
+// console.log(arr);
+
+// const americanCities = ["Califonia", "LA", "New York"];
+// const australianCities = ["Sydney", "Melbourne", "Brisbane"];
+
+// const allCities = [...americanCities, ...australianCities];
+
+// console.log(allCities.join(" - "));
+
+// const Ci = ["Gampola", "Kandy", "Colombo", "Gampaha"];
+// Ci.push("Kalutara");
+// let [first, ...rest] = Ci;
+// console.log(Ci);
+// console.log("First =>" + first + " Rest=>" + rest);
+
+const u1 = {
+  name12: "Ryan",
+  emailly: "Rya@gmail.com",
+  password1: "JilJilJilBuk",
 };
-Canada.withDash();
+let { password1, ...rest } = u1;
+console.log(rest);

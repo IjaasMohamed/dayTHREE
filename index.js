@@ -1,8 +1,4 @@
-console.log("Getting started with node");
+const { sum } = require("./helpers");
 
-function sum(a, b) {
-  return a + b;
-}
-
-const total = sum(100, 10);
+const total = sum(25, 486);
 console.log(total);

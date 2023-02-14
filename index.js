@@ -32,10 +32,23 @@
 
 // console.log("Now watching the target.txt for any changes");
 
-const fs = require("fs");
-const fileName = "target.txt";
+// const fs = require("fs");
+// const fileName = "target.txt";
 
-const data = fs.readFileSync(fileName);
-console.log(data.toString());
+// const data = fs.readFileSync(fileName);
+// console.log(data.toString());
 
-console.log("Now watching the target.txt for any changes");
+// console.log("Now watching the target.txt for any changes");
+
+const express = require("express");
+const app = express();
+
+app.get("/api", function (req, res) {
+  res.json({
+    user: {
+      name: "Ijaas",
+      age: 24,
+    },
+  });
+});
+app.listen(8000, () => console.log("port is running"));
